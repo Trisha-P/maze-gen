@@ -18,4 +18,10 @@ public class Main {
         MazeExporter exporter = new MazeExporter(theMaze);
         exporter.export(config.outputFile());
     }
+
+    private static Random buildReproducibleGenerator(long seed) {
+        Random generator = new Random();
+        generator.setSeed(seed);
+        return generator;
+    }
 }
