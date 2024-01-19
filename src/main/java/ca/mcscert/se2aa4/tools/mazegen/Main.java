@@ -9,5 +9,9 @@ public class Main {
 
     public static void main(String[] args) {
         logger.info("Here goes the business code");
+        Configuration config = readConfiguration(args);
+        Random random = buildReproducibleGenerator(config);
+        Maze theMaze = new Maze(config, random);
+        theMaze.export(config);
     }
 }
