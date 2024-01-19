@@ -3,6 +3,8 @@ package ca.mcscert.se2aa4.tools.mazegen;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.util.Random;
+
 public class Main {
 
     private static final Logger logger = LogManager.getLogger();
